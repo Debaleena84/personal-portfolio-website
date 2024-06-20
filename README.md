@@ -1,7 +1,13 @@
 <h3>Intro:</h3>
 <h3>Personal Portfolio Website</h3>
-<p>This project is a personal portfolio website designed to showcase personal projects, skills, and experiences. It provides an elegant and responsive design that ensures a great user experience across different devices.
-Inspired hugely from an Awwwards winning website, with a focus on advanced CSS Animations.</p>
+<p>This project is a personal portfolio website designed to showcase personal projects, skills, and experiences. It provides an elegant and responsive design that ensures a great user experience across different devices. Inspired hugely from an Awwwards winning website, with a focus on advanced CSS Animations.</p>
+
+
+
+https://github.com/Debaleena84/DIV-personal-portfolio-website-ongoing/assets/85742267/5c014fb3-5fab-40e6-b90d-17260276e2b3
+
+
+
 <h3>Features:</h3>
 <ul>
   <li>Responsive Design: Ensures the website looks great on all devices.</li>
