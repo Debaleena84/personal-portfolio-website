@@ -30,6 +30,7 @@ html, body {
 #main {
     position: relative;
     z-index: 10;
+    min-height: 256rem;
 }
 
 #page1 {
@@ -205,7 +206,7 @@ nav h3 {
     width: 45.57vw;
     height: 34.57vw;
     right: 0;
-    top: 67vh;
+    top: 67.4vh;
 }
 
 #hero-1 {
@@ -214,7 +215,7 @@ nav h3 {
     width: 100%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    filter: blur(10px);
+    filter: blur(2.2vw);
     position: absolute;
 }
 
@@ -229,7 +230,7 @@ nav h3 {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    filter: blur(25px);
+    filter: blur(81px);
 }
 
 #hero-3 {
@@ -238,31 +239,32 @@ nav h3 {
     position: absolute;
     width: 30vw;
     border-radius: 50%;
-    filter: blur(25px);
+    filter: blur(81px);
     animation-name: anime1;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    z-index: -1;
 }
 
 @keyframes anime1 {
     from {
-        transform: translate(55%, -3%);
+        transform: translate(55%, -11%);
     }
 
     to {
-        transform: translate(0%, 10%);
+        transform: translate(0%, 29%);
     }
 }
 
 @keyframes anime2 {
     from {
-        transform: translate(5%, -5%);
+        transform: translate(11%, -11%);
     }
 
     to {
-        transform: translate(-20%, 30%);
+        transform: translate(-24%, 34%);
     }
 }
 
@@ -364,7 +366,7 @@ nav h3 {
     background: linear-gradient(to top right, #ff2d03, #ff5c0b);
     top: 58%;
     left: 25%;
-    filter: blur(20px);
+    filter: blur(32px);
     animation-name: gooey;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -375,13 +377,13 @@ nav h3 {
 
 @keyframes gooey {
     from {
-        filter: blur(20px);
-        transform: translate(10%, -10%) skew(0);
+        filter: blur(32px);
+        transform: translate(22%, -22%) skew(0);
     }
 
     to {
-        filter: blur(30px);
-        transform: translate(-10%, 10%) skew(-12deg);
+        filter: blur(44px);
+        transform: translate(-22%, 22%) skew(-12deg);
     }
 }
 
@@ -420,6 +422,10 @@ nav h3 {
     color: #4c4f65;
 }
 
+#elem-container {
+    margin-bottom: 20px;
+}
+
 .elem {
     height: 145px;
     width: 100%;
@@ -430,6 +436,7 @@ nav h3 {
     align-items: center;
     padding: 0 2vw;
     color: #4c4f65;
+    cursor: pointer;
 }
 
 .elem h2 {
@@ -453,17 +460,113 @@ nav h3 {
     transform: translateY(0);
 }
 
-#fixed-image {
-    height: 30vw;
-    width: 24vw;
-    border-radius: 15px;
-    position: fixed;
-    z-index: 99;
-    left: 50%;
-    top: 25%;
-    display: none;
-    background-size: cover;
-    background-position: center;
+.card {
+    background-color: #2e3c2f;
+    border-radius:11px;
+    border: #4c4f65;
+    box-shadow: 0 4px 8px #4c4f65;
+    max-width: 56%;
+    overflow: hidden;
+    display: none; 
+    position: relative;
+    color: #EFEAE3;
+    margin: -6.92rem auto;
+    margin-top: 2.1vh;
+    margin-bottom: 2.1vh;
+}
+
+.card-header {
+    padding: 16px;
+    text-align: center;
+    position: relative;
+}
+
+.card-header h2 {
+    margin: 0;
+    color: #EFEAE3;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #EFEAE3;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-body img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-body p {
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.features span {
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.card-footer {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags .tag {
+    background-color: #EFEAE3;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #4c4f65;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.github {
+    background-color: #EFEAE3;
+    color: #bc601f;
+}
+
+.tour {
+    background-color: #bc601f;
+    color: #EFEAE3;
 }
 
 #page4 {
@@ -496,7 +599,7 @@ nav h3 {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    height: 354px;
+    height: 434px;
     width: 581px;
     margin: -6.92rem auto;
 }
@@ -514,8 +617,9 @@ nav h3 {
 
 .gridCell h2 {
     font-weight: 900;
-    font-size: 17.45px;
+    font-size: 16.45px;
     text-align: center;
+    margin-top: 0.37rem;
 }
 
 .div4-content {
@@ -548,22 +652,34 @@ nav h3 {
     box-sizing: border-box;
 }
 
-.div5-content ul {
+.div5-content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
-    justify-content: center; 
-    align-items: center;
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
-    width: 100%; 
-    box-sizing: border-box; 
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 1.01rem; 
 }
 
-.div5-content li {
-    margin: 0 10px; 
-    white-space: nowrap;
+.div5 ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.div5 ul li {
+    padding: 4.45px 0;
+}
+
+.div5 ul li::before {
+    content: '\2022'; 
+    color: #4c4f65; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: 1.81em; 
+}
+
+#div5-left, #div5-right {
+    width: 48%;
+    box-sizing: border-box;
 }
 
 .div5 ul li::before {
@@ -579,6 +695,56 @@ nav h3 {
     text-align: center;
 }
 
+.div6-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 1.4rem;
+}
+
+.div6 ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.div6 ul li {
+    padding: 4.45px 0;
+}
+
+.div6 ul li::before {
+    content: '\2022'; 
+    color: #4c4f65; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: 1.81em; 
+}
+
+.div7-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 1.4rem;
+}
+
+.div7 ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.div7 ul li {
+    padding: 4.45px 0;
+}
+
+.div7 ul li::before {
+    content: '\2022'; 
+    color: #4c4f65; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: 1.81em; 
+}
+
 .div4 { grid-area: 2 / 1 / 4 / 3; 
     display: flex;
     justify-content: space-between;
@@ -587,16 +753,22 @@ nav h3 {
 }
 .div5 { grid-area: 4 / 2 / 5 / 4;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    max-width: 100%; 
-    box-sizing: border-box; 
-    overflow: hidden; 
+    justify-content: space-between;
+    padding: 12px;
+    height: 167px; 
 }
-.div6 { grid-area: 4 / 1 / 5 / 2; }
-.div7 { grid-area: 2 / 3 / 4 / 4; }
+.div6 { grid-area: 4 / 1 / 5 / 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    height: 100%;
+}
+.div7 { grid-area: 2 / 3 / 4 / 4;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    height: 100%;
+}
 
 #page5 {
     height: 127vh;

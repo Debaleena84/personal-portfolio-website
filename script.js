@@ -3,6 +3,43 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to handle clicking on project elements
+    function showCard(cardId) {
+        var card = document.getElementById(cardId);
+        card.style.display = "block";
+    }
+
+    // Function to handle closing the card
+    function closeCard(cardId) {
+        var card = document.getElementById(cardId);
+        card.style.display = "none";
+    }
+
+    // Get all elements with class "elem" (project elements)
+    var elems = document.querySelectorAll(".elem");
+
+    // Loop through each project element
+    elems.forEach(function(elem, index) {
+        var cardId = "card" + (index + 1); // Construct the corresponding card ID
+        elem.addEventListener("click", function() {
+            showCard(cardId); // Show the corresponding card when clicked
+        });
+    });
+
+    // Get all elements with class "close-btn" (close buttons in cards)
+    var closeBtns = document.querySelectorAll(".close-btn");
+
+    // Loop through each close button
+    closeBtns.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            var cardId = this.parentElement.parentElement.id; // Get the ID of the parent card
+            closeCard(cardId); // Close the corresponding card
+        });
+    });
+});
+
+
 function page4Animation() {
     var elemC = document.querySelector("#elem-container")
     var fixed = document.querySelector("#fixed-image")
