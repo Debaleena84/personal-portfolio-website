@@ -423,7 +423,9 @@ nav h3 {
 }
 
 #elem-container {
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
+    margin-left: 27.4rem;
+    margin-right: 2.9rem;
 }
 
 .elem {
@@ -437,9 +439,16 @@ nav h3 {
     padding: 0 2vw;
     color: #4c4f65;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem h4 {
     font-size: 3vw;
     position: relative;
     z-index: 9;
@@ -458,6 +467,20 @@ nav h3 {
 
 .elem:hover .overlay {
     transform: translateY(0);
+}
+
+#fixed-image {
+    height: 29vw;
+    width: 25vw;
+    background-color: red;
+    border-radius: 11px;
+    position: fixed;
+    z-index: 99;
+    left: 2%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }
 
 .card {

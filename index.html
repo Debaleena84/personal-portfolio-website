@@ -18,18 +18,18 @@
         <h1>BUILDING</h1>
         <h1>VISUAL STORYTELLING</h1>
     </div>
-    
-    <div id="card"></div>
+
+    <div id="fixed-image"></div>
     
     <div id="main">
 
         <div id="page1">
             <nav>
                 <div id="nav-content">
-                    <h4><a href="#">About</a></h4>
-                    <h4><a href="#">Projects</a></h4>
-                    <h4><a href="#">Skills</a></h4>
-                    <h4><a href="#">Experience</a></h4>
+                    <h4><a href="#page2" onclick="toggleMenu()">About</a></h4>
+                    <h4><a href="#page3" onclick="toggleMenu()">Projects</a></h4>
+                    <h4><a href="#page4" onclick="toggleMenu()">Skills</a></h4>
+                    <h4><a href="#page5" onclick="toggleMenu()">Contact</a></h4>
                 </div>
                 <h3>Menu</h3>
             </nav>
@@ -122,9 +122,11 @@
             </div>
 
             <div id="elem-container">
-                <div id="elem1" class="elem">
+                <div id="elem1" class="elem"
+                data-image="#">
                     <div class="overlay"></div>
                     <h2 id="showCard">Personal Portfolio Website</h2>
+                    <h4>+</h4>
                 </div>
                 <div class="card" id="card1">
                     <div class="card-header">
@@ -154,9 +156,11 @@
 
                 </div>
 
-                <div id="elem2" class="elem">
+                <div id="elem2" class="elem"
+                data-image="#">
                     <div class="overlay"></div>
                     <h2 id="showCard">Personal Portfolio Website</h2>
+                    <h4>+</h4>
                 </div>
                 <div class="card" id="card2">
                     <div class="card-header">
@@ -184,9 +188,11 @@
                     </div>
                 </div>
 
-                <div id="elem3" class="elem">
+                <div id="elem3" class="elem"
+                data-image="#">
                     <div class="overlay"></div>
                     <h2 id="showCard">Personal Portfolio Website</h2>
+                    <h4>+</h4>
                 </div>
                 <div class="card" id="card3">
                     <div class="card-header">
@@ -215,9 +221,11 @@
 
                 </div>
 
-                <div id="elem4" class="elem">
+                <div id="elem4" class="elem"
+                data-image="#">
                     <div class="overlay"></div>
                     <h2 id="showCard">Personal Portfolio Website</h2>
+                    <h4>+</h4>
                 </div>
                 <div class="card" id="card4">
                     <div class="card-header">
@@ -318,8 +326,17 @@
             </div>
         </div>
 
+        <div id="page5"></div>
         <div id="full-scr">
             <div id="full-div1"></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="footer-div">
+        </div>
+        <h1>Sundown</h1>
+        <div id="footer-bottom">
         </div>
     </div>
 
@@ -332,17 +349,6 @@
 
 </html>
 
-<!--<div id="footer">
-    <div id="footer-div">
-        <h4>Work</h4>
-        <h4>Work</h4>
-        <h4>Work</h4>
-    </div>
-    <h1>Design</h1>
-    <div id="footer-bottom">
-
-    </div>
-</div>-->
 
 <!--
     <div class="menu-links">
