@@ -129,7 +129,7 @@ nav h3 {
 }
 
 #left h3 {
-    width: 25vw;
+    width: 32vw;
     font-size: 1.8vw;
     line-height: 2vw;
     padding-bottom: 0.81rem;
@@ -472,7 +472,7 @@ nav h3 {
 #fixed-image {
     height: 29vw;
     width: 25vw;
-    background-color: red;
+    background-color: #4c0f03;
     border-radius: 11px;
     position: fixed;
     z-index: 99;
@@ -484,7 +484,7 @@ nav h3 {
 }
 
 .card {
-    background-color: #2e3c2f;
+    background-color: #17181e;
     border-radius:11px;
     border: #4c4f65;
     box-shadow: 0 4px 8px #4c4f65;
@@ -584,18 +584,18 @@ nav h3 {
 
 .github {
     background-color: #EFEAE3;
-    color: #bc601f;
+    color: #4c0f03;
 }
 
 .tour {
-    background-color: #bc601f;
+    background-color: #4c0f03;
     color: #EFEAE3;
 }
 
 #page4 {
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    height: 81vh;
     width: 100%;
     background-color: #EFEAE3;
     padding: 4.56vw 2vw;
@@ -794,16 +794,16 @@ nav h3 {
 }
 
 #page5 {
-    height: 127vh;
+    height: 100vh;
     width: 100%;
 }
 
 #footer {
     position: fixed;
-    height: 127vh;
+    height: 100%;
     width: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: #17181e;
+    color: #EFEAE3;
     z-index: 9;
     bottom: 0;
     display: flex;
@@ -812,27 +812,72 @@ nav h3 {
     padding: 1vw 3vw;
 }
 
-#footer h1 {
-    font-size: 15vw;
+#footer-div {
+    height: 48vh;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 12.7rem;
 }
 
-#footer-div {
-    height: 20vh;
-    width: 100%;
-    background-color: olivedrab;
-    justify-content: space-between;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+.contact-container h1 {
+    font-size: 111px;
+    margin: 0;
+}
+
+.contact-container p {
+    font-size: small;
+    color: #EFEAE3;
+    justify-content: center;
+}
+
+#footer-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#footer-links a {
+    font-size: larger;
+    transition: color 0.2s;
+    justify-content: center;
+    text-decoration: none;
+    color: #EFEAE3;
+    margin-right: 7.9px;
+    margin-top: 0.81rem;
+    cursor: pointer;
+}
+
+#footer-links a:hover {
+    color: #FE320A;
 }
 
 #footer-bottom {
-    border-top: 1px solid #dadada;
-    height: 5vh;
+    border-top: 1px solid #c9cad1;
+    height: 4vh;
     width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+#whom, #what, #when{
+    text-align: left;
+    margin-top: 9px;
+    font-size: smaller;
 }
 
 #full-scr {
     height: 100vh;
     width: 100%;
-    background-color: #00000070;
+    background-color: #17181e;
     position: fixed;
     z-index: 99;
     top: -100%;
