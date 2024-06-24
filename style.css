@@ -859,10 +859,6 @@ nav h3 {
     color: #EFEAE3;
     margin-right: 7.9px;
     margin-top: 0.81rem;
-    cursor: pointer;
-    z-index: 1000; 
-    position: relative; 
-    pointer-events: auto; 
 }
 
 #footer-links a:hover {
