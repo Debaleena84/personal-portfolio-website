@@ -860,6 +860,7 @@ nav h3 {
     margin-right: 7.9px;
     margin-top: 0.81rem;
     cursor: pointer;
+    z-index: 10; /* Added to ensure links are above other elements */
 }
 
 #footer-links a:hover {
