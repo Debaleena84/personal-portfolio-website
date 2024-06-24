@@ -93,8 +93,13 @@ nav {
     z-index: 9;
 }
 
-#nav-content h4:hover a {
+#nav-content h4:hover a{
     color: #ebebeb;
+}
+
+#nav-content h4:active a{
+    color: #ebebeb;
+    z-index: 10;
 }
 
 nav h3 {
