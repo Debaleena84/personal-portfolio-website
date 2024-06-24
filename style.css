@@ -280,7 +280,7 @@ nav h3 {
     background-color: #EFEAE3;
     color: #4c4f65;
     padding:14.96vw 0;
-    position: relative;
+    position: var(100vw);
 }
 
 #moving-text {
@@ -859,7 +859,6 @@ nav h3 {
     color: #EFEAE3;
     margin-right: 7.9px;
     margin-top: 0.81rem;
-    cursor: pointer;
 }
 
 #footer-links a:hover {
