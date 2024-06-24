@@ -1,8 +1,3 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     // Function to handle clicking on project elements
     function showCard(cardId) {
@@ -37,8 +32,22 @@ document.addEventListener("DOMContentLoaded", function() {
             closeCard(cardId); // Close the corresponding card
         });
     });
-});
 
+    // Smooth scroll for navigation links
+    var navLinks = document.querySelectorAll('nav a[href^="#"]');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var targetId = this.getAttribute('href').substring(1);
+            var targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
 
 function page4Animation() {
     var elemC = document.querySelector("#elem-container")
@@ -65,11 +74,11 @@ function swiperAnimation() {
         centeredSlides: true,
         spaceBetween: 30,
         pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+            el: ".swiper-pagination",
+            clickable: true,
         },
     });
-    
+
 }
 
 function menuAnimation() {
@@ -102,4 +111,5 @@ swiperAnimation()
 page4Animation()
 menuAnimation()
 loaderAnimation()
+
 

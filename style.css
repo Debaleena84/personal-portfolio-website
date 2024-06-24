@@ -25,6 +25,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 #main {
@@ -279,7 +280,7 @@ nav h3 {
     background-color: #EFEAE3;
     color: #4c4f65;
     padding:14.96vw 0;
-    position:var(100vw);
+    position: relative;
 }
 
 #moving-text {
