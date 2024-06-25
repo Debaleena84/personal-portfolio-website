@@ -131,7 +131,14 @@ nav h3 {
     font-size: 1.1vw;
     font-weight: lighter;
     line-height: 2vw;
+    color: #4c0f03;
     padding-bottom: 0.81rem;
+}
+
+#left h5 ion-icon {
+    margin-right: 2.2px;
+    color: #4c0f03;
+    margin-bottom: -3.21px;
 }
 
 #left h3 {
@@ -355,13 +362,14 @@ nav h3 {
     width: 100%;
     border-radius: .4em;
     vertical-align: middle;
-    margin-top: 64vh;
+    margin-top: 52.6vh;
 }
 
 #bottom-part2 p {
     font-weight: 200;
     margin-top: 2vw;
-    font-size: 1vw;
+    font-size: 0.97vw;
+    justify-content:left;
 }
 
 #page2 #gooey {
