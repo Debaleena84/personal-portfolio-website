@@ -443,7 +443,8 @@ nav h3 {
 }
 
 .elem {
-    height: 145px;
+    height: auto;
+    min-height: 145px;
     width: 100%;
     position: relative;
     border-bottom: 1px solid #38383864;
@@ -486,7 +487,6 @@ nav h3 {
 #fixed-image {
     height: 29vw;
     width: 25vw;
-    background-color: #4c0f03;
     border-radius: 11px;
     position: fixed;
     z-index: 99;

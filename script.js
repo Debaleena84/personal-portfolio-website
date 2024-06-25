@@ -50,22 +50,30 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function page4Animation() {
-    var elemC = document.querySelector("#elem-container")
-    var fixed = document.querySelector("#fixed-image")
-    elemC.addEventListener("mouseenter", function () {
-        fixed.style.display = "block"
-    })
-    elemC.addEventListener("mouseleave", function () {
-        fixed.style.display = "none"
-    })
+    var elemC = document.querySelector("#elem-container");
+    var fixed = document.querySelector("#fixed-image");
+    var imagePaths = [
+        "assets/portfolio-MU.png",
+        "assets/clone-MU.png",
+        "assets/gpt-MU.png",
+        "assets/clone-MU.png",
+    ];
 
-    var elems = document.querySelectorAll(".elem")
-    elems.forEach(function (e) {
+    elemC.addEventListener("mouseenter", function () {
+        fixed.style.display = "block";
+        fixed.style.backgroundImage = `url(assets/portfolio-MU.png)`;
+    });
+
+    elemC.addEventListener("mouseleave", function () {
+        fixed.style.display = "none";
+    });
+
+    var elems = document.querySelectorAll(".elem");
+    elems.forEach(function (e, index) {
         e.addEventListener("mouseenter", function () {
-            var image = e.getAttribute("data-image")
-            fixed.style.backgroundImage = `url(${image})`
-        })
-    })
+        fixed.style.backgroundImage = `url(${imagePaths[index]})`;
+    });
+    });
 }
 
 function swiperAnimation() {
