@@ -457,13 +457,13 @@ nav h3 {
 }
 
 .elem h2 {
-    font-size: 3vw;
+    font-size: 2.89vw;
     position: relative;
     z-index: 9;
 }
 
 .elem h4 {
-    font-size: 3vw;
+    font-size: 1.8vw;
     position: relative;
     z-index: 9;
 }
@@ -539,11 +539,6 @@ nav h3 {
     padding: 16px;
 }
 
-.card-body img {
-    width: 100%;
-    border-radius: 4px;
-}
-
 .card-body p {
     margin: 16px 0;
     font-size: 14px;
@@ -574,6 +569,7 @@ nav h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    width: 23.2vw;
 }
 
 .tags .tag {
@@ -839,7 +835,7 @@ nav h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 81vh;
+    height: 76vh;
     text-align: center;
 }
 
