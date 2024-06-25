@@ -31,7 +31,7 @@ html, body {
 #main {
     position: relative;
     z-index: 10;
-    min-height: 256rem;
+    min-height: 206.4rem;
 }
 
 #page1 {
@@ -799,23 +799,21 @@ nav h3 {
     height: 100%;
 }
 
-#page5 {
-    height: 100vh;
-    width: 100%;
-}
-
 #footer {
-    position: fixed;
-    height: 100%;
-    width: 100%;
+    position: relative;
+    z-index: 10;
     background-color: #17181e;
     color: #EFEAE3;
-    z-index: 9;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    width: 100%;
     padding: 1vw 3vw;
+}
+
+#footer-top {
+    border-bottom: 1px solid #c9cad1;
+    height: 4vh;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
 }
 
 #footer-div {
@@ -826,43 +824,61 @@ nav h3 {
 }
 
 .contact-container {
+    position: relative;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 81vh;
     text-align: center;
-    justify-content: center;
 }
+
 .contact-container h1 {
     font-size: 111px;
-    margin: 0;
+    margin-bottom: 1.12rem;
 }
 
 .contact-container p {
     font-size: small;
     color: #EFEAE3;
     justify-content: center;
+    margin-bottom: 0.72rem;
+}
+
+#email a {
+    font-size: small;
+    color: #EFEAE3;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#email a:hover {
+    color: #FE320A;
+    z-index: 10;
 }
 
 #footer-links {
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-top: 0.72rem;
 }
 
 #footer-links a {
-    font-size: larger;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    font-size: large;
     transition: color 0.2s;
-    justify-content: center;
     text-decoration: none;
     color: #EFEAE3;
     margin-right: 7.9px;
-    margin-top: 0.81rem;
 }
 
 #footer-links a:hover {
     color: #FE320A;
+    z-index: 10;
 }
 
 #footer-bottom {
@@ -873,10 +889,15 @@ nav h3 {
     display: flex;
 }
 
-#whom, #what, #when{
+#whom, #what, #when, #tagline {
     text-align: left;
     margin-top: 9px;
     font-size: smaller;
+}
+
+#whom ion-icon {
+    margin-bottom: -2.85px;
+    font-size: larger;
 }
 
 #full-scr {
