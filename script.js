@@ -54,7 +54,7 @@ function page4Animation() {
     var fixed = document.querySelector("#fixed-image");
     var imagePaths = [
         "assets/portfolio-MU.png",
-        "assets/clone-MU.png",
+        "assets/ai-MU.png",
         "assets/gpt-MU.png",
         "assets/clone-MU.png",
     ];
