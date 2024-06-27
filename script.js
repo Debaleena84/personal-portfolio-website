@@ -109,11 +109,15 @@ function menuAnimation() {
 }
 
 function loaderAnimation() {
-    var loader = document.querySelector("#loader")
+    var loader = document.querySelector("#loader");
     setTimeout(function () {
-        loader.style.top = "-100%"
-    }, 4200)
+        loader.style.top = "-100%";
+        loader.style.opacity = "0";
+    }, 4200);
 }
+
+window.onload = loaderAnimation;
+
 
 swiperAnimation()
 page4Animation()

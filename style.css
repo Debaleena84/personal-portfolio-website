@@ -813,6 +813,62 @@ nav h3 {
     font-size: larger;
 }
 
+#loader {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: top 0.7s ease, opacity 0.7s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+#loader h1 {
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to right, orange, #FE320A);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+#loader h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#loader h1:nth-child(3) {
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #loader h1 {
+        font-size: 9vw;
+    }
+}
+
 /*#full-scr {
     height: 100vh;
     width: 100%;
@@ -968,9 +1024,6 @@ nav h3 {
         position: absolute;
         border-radius: 50%;
         background: linear-gradient(to top right, #ff2d03, #ff5c0b);
-        /* background: linear-gradient(to top right,red,blue); */
-
-
         top: 58%;
         left: 25%;
         filter: blur(20px);
@@ -982,58 +1035,5 @@ nav h3 {
 
     }
 
-}
-
-#loader{
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    transition: all ease 0.7s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#loader h1{
-    font-size: 4vw;
-    color: transparent;
-    background: linear-gradient(to right,orange,orangered);
-    -webkit-background-clip: text;
-    position: absolute;
-    opacity: 0;
-    animation-name: load;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-timing-function: linear;
-}
-#loader h1:nth-child(2){
-    animation-delay: 2s;
-}
-#loader h1:nth-child(3){
-    animation-delay: 3s;
-}
-
-@keyframes load {
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
-@media (max-width:600px) {
-    #loader h1{
-        font-size: 9vw;
-    }
 }
 
