@@ -65,7 +65,7 @@ nav {
     font-weight: 500;
     transition: all ease 0.4s;
     position: relative;
-    font-size: 18px;
+    font-size: 15px;
     overflow: hidden;
     color: #4c4f65;
 }
@@ -102,8 +102,30 @@ nav {
     color: #ebebeb;
     z-index: 10;
 }
+nav .menu-buttons {
+    display: none;
+}
 
 nav h3 {
+    display: none;
+    cursor: pointer;
+    margin: 0 10px; 
+    padding: 10px 20px;
+    border: 1px solid #4c4f6581;
+    border-radius: 22px;
+    font-weight: 400;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 11px;
+    overflow: hidden;
+    color: #4c4f65;
+}
+
+nav h3.active {
+    display: block;
+}
+
+nav h3.hidden {
     display: none;
 }
 
@@ -803,7 +825,7 @@ nav h3 {
 #loader {
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #17181e;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -850,8 +872,78 @@ nav h3 {
     }
 }
 
-@media (max-width: 600px) {
-    #loader h1 {
-        font-size: 9vw;
+@media (max-width: 768px) {
+    nav #nav-content {
+        display: none;
+    }
+
+    nav #nav-content.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #d7d3cc;
+        position: fixed;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 22px;
+        gap: 11px;
+        z-index: 99;
+    }
+
+    nav h3 {
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+        font-size: 14.5px;
+    }
+
+    nav .menu-buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    nav h3#close-button {
+        display: none;
+    }
+
+    nav h3#close-button.active {
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+        border: none;
+        font-size: large;
+    }
+
+    #nav-content h4 {
+        width: 100%;
+        text-align: left;
+        padding: 11px 0;
+        font-size: 32px;
+        position: relative;
+        overflow: hidden;
+        border: none;
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    #nav-content h4 a {
+        color: #17181e;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        position: relative; 
+        z-index: 1;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

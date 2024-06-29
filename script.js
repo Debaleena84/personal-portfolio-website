@@ -1,4 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.getElementById("menu-button");
+    const closeButton = document.getElementById("close-button");
+    const navContent = document.getElementById("nav-content");
+    const navLinks = document.querySelectorAll("#nav-content h4 a");
+
+    menuButton.addEventListener("click", function() {
+        navContent.classList.add("active");
+        menuButton.classList.remove("active");
+        closeButton.classList.add("active");
+    });
+
+    closeButton.addEventListener("click", function() {
+        navContent.classList.remove("active");
+        menuButton.classList.add("active");
+        closeButton.classList.remove("active");
+    });
+
+    // Close the menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            navContent.classList.remove("active");
+            menuButton.classList.add("active");
+            closeButton.classList.remove("active");
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     // Function to handle clicking on project elements
     function showCard(cardId) {
         var card = document.getElementById(cardId);
