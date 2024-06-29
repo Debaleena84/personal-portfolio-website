@@ -1,6 +1,6 @@
 <h3>Intro:</h3>
 <h3>Personal Portfolio Website</h3>
-<p>This project is a personal portfolio website designed to showcase personal projects, skills, and experiences. It provides an elegant and responsive design that ensures a great user experience across different devices. Inspired hugely from an Awwwards winning website, with a focus on advanced CSS Animations.</p>
+<p>This personal portfolio website is a visually captivating and interactive project built using HTML, CSS, and JavaScript. The design features a clean and modern aesthetic, with a focus on smooth scrolling and engaging animations that enhance the user experience. The website showcases the background, skills, and projects that I've undertaken in an organized manner. Key features include a responsive layout, a fixed image that reacts to user interaction, a card-based project display with details and links, and a comprehensive skills section highlighting the technical proficiencies. The project is built using HTML5, CSS3, Vanilla JavaScript, and libraries like Swiper.js and Locomotive Scroll for the interactive elements. Techniques like CSS animations, gradient backgrounds, and icon usage are implemented to create a cohesive portfolio website.</p>
 
 
 
