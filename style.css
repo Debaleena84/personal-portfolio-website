@@ -577,7 +577,7 @@ nav h3.hidden {
 }
 
 .card-header h2 {
-    margin: 0;
+    margin: 22px;
     color: #EFEAE3;
 }
 
@@ -1143,10 +1143,10 @@ nav h3.hidden {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 412px) {
 
     #main {
-        height: 176rem;
+        min-height: 45vh;
         overflow-x: hidden;
     }
     
@@ -1256,22 +1256,22 @@ nav h3.hidden {
     }
 
     #center {
-        height: 85vh;
+        height: 75vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         border-bottom: 1px solid #4c4f65;
-        padding: 32vw 4vw;
+        padding: 35vw 4vw;
         color: #4c4f65;
     }
 
     #left h2 {
         width: 100%;
-        font-size: 7.488vw;
-        line-height: 5.2vw;
-        padding-bottom: 0.89rem;
+        font-size: 8.6112vw;
+        line-height: 5.4vw;
+        padding-bottom: 0.95rem;
     }
 
     #left, #right {
@@ -1288,36 +1288,36 @@ nav h3.hidden {
 
     #left h5 {
         width: 100%;
-        font-size: 2.964vw;
-        padding-bottom: 0.89rem;
+        font-size: 3.4086vw;
+        padding-bottom: 0.95rem;
     }
 
     #left h3 {
         width: 96%;
-        font-size: 6.9vw;
-        line-height: 5.2vw;
-        padding-bottom: 0.89rem;
+        font-size: 7.935vw;
+        line-height: 6.9vw;
+        padding-bottom: 0.95rem;
     }
 
     #links a {
-        margin-right: 8px;
-        padding-bottom: 0.89rem;
-        font-size: 5.46vw;
+        margin-right: 9px;
+        padding-bottom: 0.95rem;
+        font-size: 5.729vw;
     }
 
     #center h1 {
         font-size: 18vw;
         line-height: 15vw;
-        padding-bottom: 15%;
+        padding-bottom: 18%;
     }
 
     #left h4 {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     #hero-shape {
         width: 100vw;
-        height: 60vw;
+        height: 80vw;
         right: 0;
         top: 105vh;
     }
@@ -1363,8 +1363,12 @@ nav h3.hidden {
 
     #bottom-part2 p {
         width: 80%;
-        font-size: 3.2vw;
-        margin-top: 4.9vw;
+        font-size: 3.8vw;
+        margin-top: 5.9vw;
+    }
+
+    #page3 {
+        min-height: 68vh;
     }
 
     #elem-container {
@@ -1379,7 +1383,7 @@ nav h3.hidden {
     }
 
     .elem h2 {
-        font-size: 5.4vw;
+        font-size: 6.45vw;
     }
 
     .elem h4 {
@@ -1400,34 +1404,45 @@ nav h3.hidden {
 
     #fixed-image {
         position: absolute;
+        display: none;
     }
 
-    #page4 #heading {
-        margin-top: -0.81rem;
+    #page4 {
+        height: 81vh;
     }
+    
+    #page4 #heading {
+        margin-top: -0.75rem;
+    }
+    
 
     .container {
         gap: 4px;
         padding: 4px;
-        max-width: 460px;
+        max-width: 360px;
+        margin-top: 2.745rem;
     }
 
     .contact-container h1 {
-        font-size: 32px;
+        font-size: 44px;
     }
 
     #whom, #what, #when, #tagline {
         text-align: left;
-        margin-top: 9px;
-        font-size: 0.48rem;
+        margin-top: 11px;
+        font-size: 0.54rem;
     }
     
     #whom ion-icon {
         margin-bottom: -2.85px;
         font-size: larger;
     }
+    
+    .contact-container {
+        height: 65vh;
+    }
 
     #loader h1 {
-        font-size: 4.9vw;
+        font-size: 8.1vw;
     }
 }
