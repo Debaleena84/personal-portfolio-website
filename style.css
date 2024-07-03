@@ -1143,15 +1143,19 @@ nav h3.hidden {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
 
     #main {
-        height: 185rem;
+        height: 176rem;
         overflow-x: hidden;
     }
-
+    
     nav #nav-content {
         display: none;
+    }
+
+    #page1 {
+        min-height: auto;
     }
 
     nav #nav-content.active {
@@ -1252,7 +1256,7 @@ nav h3.hidden {
     }
 
     #center {
-        height: 111vh;
+        height: 85vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1265,9 +1269,9 @@ nav h3.hidden {
 
     #left h2 {
         width: 100%;
-        font-size: 6.24vw;
+        font-size: 7.488vw;
         line-height: 5.2vw;
-        padding-bottom: 0.81rem;
+        padding-bottom: 0.89rem;
     }
 
     #left, #right {
@@ -1284,31 +1288,31 @@ nav h3.hidden {
 
     #left h5 {
         width: 100%;
-        font-size: 2.47vw;
-        padding-bottom: 0.81rem;
+        font-size: 2.964vw;
+        padding-bottom: 0.89rem;
     }
 
     #left h3 {
-        width: 80%;
-        font-size: 5.75vw;
+        width: 96%;
+        font-size: 6.9vw;
         line-height: 5.2vw;
-        padding-bottom: 0.81rem;
+        padding-bottom: 0.89rem;
     }
 
     #links a {
         margin-right: 8px;
-        padding-bottom: 0.81rem;
-        font-size: 4.55vw;
+        padding-bottom: 0.89rem;
+        font-size: 5.46vw;
     }
 
     #center h1 {
-        font-size: 19vw;
+        font-size: 18vw;
         line-height: 15vw;
         padding-bottom: 15%;
     }
 
     #left h4 {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     #hero-shape {
@@ -1323,7 +1327,7 @@ nav h3.hidden {
     }
 
     #moving-text h1 {
-        font-size: 3em;
+        font-size: 3.45em;
     }
     
     #dot {
@@ -1339,8 +1343,8 @@ nav h3.hidden {
     }
 
     #page2-bottom h1 {
-        font-size: 2.22em;
-        line-height: 6.9vw;
+        font-size: 2.04em;
+        line-height: 8.1vw;
         width: 100%;
         margin-top: 5vh;
         letter-spacing: -0.01em;
@@ -1352,14 +1356,14 @@ nav h3.hidden {
     }
 
     #bottom-part2 img {
-        width: 69%;
+        width: 80%;
         border-radius: 0.4em;
         margin-top: 2.5vh;
     }
 
     #bottom-part2 p {
-        width: 69%;
-        font-size: 2.5vw;
+        width: 80%;
+        font-size: 3.2vw;
         margin-top: 4.9vw;
     }
 
@@ -1370,12 +1374,12 @@ nav h3.hidden {
     }
 
     .elem {
-        min-height: 120px;
-        padding: 0 5vw;
+        min-height: 111px;
+        padding: 0 4vw;
     }
 
     .elem h2 {
-        font-size: 5.8vw;
+        font-size: 5.4vw;
     }
 
     .elem h4 {
@@ -1383,7 +1387,7 @@ nav h3.hidden {
     }
     
     .card {
-        max-width: 95%;
+        max-width: 100%;
         right: 0;
         margin: -6rem auto;
         margin-top: 2.1vh;
@@ -1391,27 +1395,31 @@ nav h3.hidden {
     }
 
     .tags {
-        width: 37vw;
+        width: 29vw;
     }
 
     #fixed-image {
         position: absolute;
     }
 
+    #page4 #heading {
+        margin-top: -0.81rem;
+    }
+
     .container {
-        gap: 8px;
-        padding: 8px;
-        max-width: 520px;
+        gap: 4px;
+        padding: 4px;
+        max-width: 460px;
     }
 
     .contact-container h1 {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     #whom, #what, #when, #tagline {
         text-align: left;
         margin-top: 9px;
-        font-size: 0.64rem;
+        font-size: 0.48rem;
     }
     
     #whom ion-icon {
@@ -1420,6 +1428,6 @@ nav h3.hidden {
     }
 
     #loader h1 {
-        font-size: 5.1vw;
+        font-size: 4.9vw;
     }
 }
